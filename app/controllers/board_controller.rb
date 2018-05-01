@@ -16,5 +16,7 @@ class BoardController < ApplicationController
     @board.title = @title
     @board.content = @content
     @board.save
+    
+    redirect_to '/'
   end
 end
