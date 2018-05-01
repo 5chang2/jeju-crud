@@ -14,6 +14,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <h2><%= link_to '홈으로가기', '/' %> | 
+      <%= link_to '글작성하기', '/new' %></h2>
+      <%= yield %>
+    </div>
   </body>
 </html>
