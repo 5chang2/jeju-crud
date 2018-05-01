@@ -20,4 +20,8 @@ class BoardController < ApplicationController
     
     redirect_to '/'
   end
+  
+  def show
+    @board = Board.find(params[:id])
+  end
 end
