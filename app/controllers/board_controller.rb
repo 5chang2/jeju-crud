@@ -11,7 +11,10 @@ class BoardController < ApplicationController
   def create
     @title = params[:title]
     @content = params[:content]
-    puts @title
-    puts @content
+    
+    @board = Board.new
+    @board.title = @title
+    @board.content = @content
+    @board.save
   end
 end
