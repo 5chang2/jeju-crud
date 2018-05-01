@@ -2,4 +2,5 @@
 
 <% @boards.each do |board| %>
     <h3> <%= board.title%> </h3>
+    <p> <%= link_to '글보기', "/show/#{board.id}"%> </p>
 <% end %>
